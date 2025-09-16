@@ -1,4 +1,10 @@
 package com.example.camp_xadrez.domain.aluno;
 
-public record DadosDetalhamentoAluno() {
+import java.time.LocalDateTime;
+
+public record DadosDetalhamentoAluno(
+        String nome,
+        Integer pontos_total,
+        Boolean ativo
+) {
 }
