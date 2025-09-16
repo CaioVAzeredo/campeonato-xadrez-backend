@@ -48,11 +48,11 @@ public class Aluno {
     }
 
     public Long getId_turma() {
-        return turma.id_turma;
+        return turma.getId_turma();
     }
 
     public void setId_turma(Long id_turma) {
-        this.turma.id_turma = id_turma;
+        turma.setId_turma(id_turma);
     }
 
     public String getNome() {
@@ -96,7 +96,7 @@ public class Aluno {
     }
 
     void atualizarAluno(DadosAtualizarAluno dados){
-                this.turma.id_turma = dados.id_turma();
+                turma.setId_turma(dados.id_turma());
                 this.nome = dados.nome();
                 this.pontos_total = dados.pontos_total();
                 this.data_atualizacao = LocalDateTime.now();
